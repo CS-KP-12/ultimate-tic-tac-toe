@@ -13,15 +13,7 @@ and in each of the nine spots in the large grid, there is a smaller 3x3 tic tac 
 player selects in the smaller grid (Ex: player selects top right in the middle left tic tac toe grid), the next
 player has to then play in the corresponding tic tac toe grid (Ex: other player next selection MUST be in the top
 right tic tac toe grid), the games goes until 3 in a row in the large 3x3 grid. Each square in every grid is
-numbered from 1 to 9, left to right, and in each row.
-
-Ex:   1 | 2 | 3
-      --|---|--
-      4 | 5 | 6
-      --|---|--
-      7 | 8 | 9
-
-This is for each small grid and large grid. So, user input would be 2 numbers, both in range, with the first number
+numbered from 1 to 9, left to right, and in each row. This is for each small grid and large grid. So, user input would be 2 numbers, both in range, with the first number
 selecting a small grid, and the second number selecting a square in the small grid.
 
 ## MVP Scope

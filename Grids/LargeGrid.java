@@ -56,7 +56,7 @@ public class LargeGrid {
             return false;
         }
 
-        //Check ultimate win condition
+        this.checkUltimateWinConditions();
 
         SmallGrid next = this.getSmallGrid(smallInput);
         if (next == null || next.isGameOver()) {

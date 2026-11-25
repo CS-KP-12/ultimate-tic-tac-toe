@@ -117,16 +117,20 @@ public class SmallGrid {
         }
 
         //Check win condition for diagonals
-        if (this.gridSpaces[0][0] == this.gridSpaces[1][1] &&
-            this.gridSpaces[1][1] == this.gridSpaces[2][2]) {
-            this.winner = this.gridSpaces[0][0];
-            return;
+        if (this.gridSpaces[0][0] != ' ') {
+            if (this.gridSpaces[0][0] == this.gridSpaces[1][1] &&
+                this.gridSpaces[1][1] == this.gridSpaces[2][2]) {
+                this.winner = this.gridSpaces[0][0];
+                return;
+            }
         }
 
-        if (this.gridSpaces[2][0] == this.gridSpaces[1][1] &&
-            this.gridSpaces[1][1] == this.gridSpaces[0][2]) {
-            this.winner = this.gridSpaces[2][0];
-            return;
+        if (this.gridSpaces[0][0] != ' ') {
+            if (this.gridSpaces[2][0] == this.gridSpaces[1][1] &&
+                this.gridSpaces[1][1] == this.gridSpaces[0][2]) {
+                this.winner = this.gridSpaces[2][0];
+                return;
+            }
         }
 
         //Check for a draw
@@ -138,10 +142,10 @@ public class SmallGrid {
                     break;
                 }
             }
-            if (full) {
-                this.winner = 'D';
-                break;
-            }
+        }
+        if (full) {
+            this.winner = 'D';
+            break;
         }
     }
 }

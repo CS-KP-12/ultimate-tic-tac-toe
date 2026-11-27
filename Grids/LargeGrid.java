@@ -14,6 +14,10 @@ public class LargeGrid {
         this.currentGrid = 0;
     }
 
+    public SmallGrid getSmallGridRC(int r, int c) {
+        return this.grids[r][c];
+    }
+
     public int getCurrentGrid() {
         return this.currentGrid;
     }
@@ -46,7 +50,7 @@ public class LargeGrid {
             return false;
         }
 
-        SmallGrid selected = this.getSmallGrid(largeInput);
+        SmallGrid selected = this.getSmallGridN(largeInput);
         if (selected == null || selected.isGameOver()) {
             return false;
         }
@@ -58,7 +62,7 @@ public class LargeGrid {
 
         this.checkUltimateWinConditions();
 
-        SmallGrid next = this.getSmallGrid(smallInput);
+        SmallGrid next = this.getSmallGridN(smallInput);
         if (next == null || next.isGameOver()) {
             this.currentGrid = 0;
         } else {
@@ -67,7 +71,7 @@ public class LargeGrid {
         return true;
     }
 
-    private SmallGrid getSmallGrid(int input) {
+    private SmallGrid getSmallGridN(int input) {
         int r;
         int c;
         switch (input) {

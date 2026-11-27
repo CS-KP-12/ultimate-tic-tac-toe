@@ -75,25 +75,25 @@ public class UltimateTicTacToe {
 
         //GridsA
         IO.println(rowString(gridsA, 0));
-        IO.println("----------- | ----------- | -----------");
+        IO.println("----------- ‖ ----------- ‖ -----------");
         IO.println(rowString(gridsA, 1));
-        IO.println("----------- | ----------- | -----------");
+        IO.println("----------- ‖ ----------- ‖ -----------");
         IO.println(rowString(gridsA, 2));
-        IO.println("=========== | =========== | ===========");
+        IO.println("=========== ‖ =========== ‖ ===========");
 
         //GridsB
         IO.println(rowString(gridsB, 0));
-        IO.println("----------- | ----------- | -----------");
+        IO.println("----------- ‖ ----------- ‖ -----------");
         IO.println(rowString(gridsB, 1));
-        IO.println("----------- | ----------- | -----------");
+        IO.println("----------- ‖ ----------- ‖ -----------");
         IO.println(rowString(gridsB, 2));
-        IO.println("=========== | =========== | ===========");
+        IO.println("=========== ‖ =========== ‖ ===========");
 
         //GridsC
         IO.println(rowString(gridsC, 0));
-        IO.println("----------- | ----------- | -----------");
+        IO.println("----------- ‖ ----------- ‖ -----------");
         IO.println(rowString(gridsC, 1));
-        IO.println("----------- | ----------- | -----------");
+        IO.println("----------- ‖ ----------- ‖ -----------");
         IO.println(rowString(gridsC, 2));
     }
 
@@ -103,7 +103,7 @@ public class UltimateTicTacToe {
             if (i == 2) {
                 retStr += " " + smallGrids[i].getGridSpace(r, 0) + " | " + smallGrids[i].getGridSpace(r, 1) + " | " + smallGrids[i].getGridSpace(r, 2) + " ";
             } else {
-                retStr += " " + smallGrids[i].getGridSpace(r, 0) + " | " + smallGrids[i].getGridSpace(r, 1) + " | " + smallGrids[i].getGridSpace(r, 2) + "  | ";
+                retStr += " " + smallGrids[i].getGridSpace(r, 0) + " | " + smallGrids[i].getGridSpace(r, 1) + " | " + smallGrids[i].getGridSpace(r, 2) + "  ‖ ";
             }
         }
         return retStr;
